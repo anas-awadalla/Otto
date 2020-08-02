@@ -1,7 +1,7 @@
 import React from "react";
 import { Grow } from "@material-ui/core";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { monokaiSublime } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import {monoBlue, monokaiSublime} from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 import { useState } from "state/State";
 import { CodeGen } from "codegen/codeGen";
@@ -18,7 +18,7 @@ function CodeContainer({ getIsShown }) {
       <div
         className={state.stepper_finish ? "codeOverflowFinish" : "codeOverflow"}
       >
-        <SyntaxHighlighter language="python" style={monokaiSublime}>
+        <SyntaxHighlighter language="python" style={monoBlue}>
           {CodeGen(state, nn_state, model_state)}
         </SyntaxHighlighter>
       </div>

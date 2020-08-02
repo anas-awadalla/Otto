@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
   optionLabel: {
     marginLeft: 12,
-    borderLeft: "1px solid #bdbdbd",
+    borderLeft: "1px solid #00c3cc",
     paddingLeft: 12,
     height: 32,
     paddingTop: 4,
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export function getSteps() {
-  return ["Model Type", "Upload Model", "Preprocessors", "Engine Notebook"];
+  return ["Model Type", "Upload Model", "NLP Configurations", "Preprocessors"];
 }
 
 function getStepContent(step) {
@@ -59,9 +59,11 @@ function getStepContent(step) {
     case 1:
       return "Upload '.pth' model";
     case 2:
-      return "Set pre-processing options and select model configurations";
+      return "Set NLP Model Configurations";
     case 3:
-      return "Generate unique notebook to run your model through our engine";
+      return "Set pre-processing options and select model configurations";
+    // case 3:
+    //   return "Generate unique notebook to run your model through our engine";
     default:
       return "";
   }
