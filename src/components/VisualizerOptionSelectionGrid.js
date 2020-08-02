@@ -194,15 +194,13 @@ export default function VisualizerOptionSelectionGrid() {
   function getTitle() {
     switch (state.stepper_state) {
       case StepperState.TASK:
-        return "Select a Machine Learning Task";
+        return "Select Your Pytorch Model Type";
       case StepperState.DATASET:
-        return "Choose a Dataset";
+        return "Upload a Model";
       case StepperState.MODEL:
-        return state.task === Tasks.NATURAL_LANGUAGE
-          ? "Select ML Model(s)"
-          : "Select an ML Model";
-      case StepperState.PREPROCESSORS:
         return "Choose Data Preprocessor(s)";
+      case StepperState.PREPROCESSORS:
+        return "";
     }
   }
 

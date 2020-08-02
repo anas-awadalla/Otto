@@ -8,7 +8,7 @@ function ContentContainer() {
   return (
     <>
       <Col className="summaryContainer" lg={1}>
-        {/* <SummaryContainer /> */}
+         <SummaryContainer />
         <RightColumnContainer />
       </Col>
       <Col className="mainColumnContainer" lg={6}>

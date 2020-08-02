@@ -49,23 +49,21 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export function getSteps() {
-  return ["Task", "Dataset", "Model", "Preprocessors", "Visualize"];
+  return ["Model Type", "Upload Model", "Preprocessors", "Engine Notebook"];
 }
 
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return "Identify the machine learning task matching your goal";
+      return "Set the type of Pytorch model";
     case 1:
-      return "Choose from provided datasets or use your own";
+      return "Upload '.pth' model";
     case 2:
-      return "Select the model best equipped to unlock insights from your data";
+      return "Set pre-processing options and select model configurations";
     case 3:
-      return "Optimize your data for machine learning";
-    case 4:
-      return "Fine tune and visualize your model";
+      return "Generate unique notebook to run your model through our engine";
     default:
-      return "OttoML";
+      return "";
   }
 }
 

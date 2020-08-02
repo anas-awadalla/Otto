@@ -20,6 +20,7 @@
     "react-bootstrap": "^1.0.1",
     "react-chat-widget": "^3.0.3",
     "react-dom": "^16.13.1",
+    "react-kawaii": "^0.16.0",
     "react-scripts": "3.4.1",
     "react-sigma": "^1.2.34",
     "react-syntax-highlighter": "^12.2.1",

@@ -25,7 +25,7 @@ function HeaderContainer() {
             height="50"
             className="d-inline-block align-top"
           />{" "}
-          <span className="appLogo">OttoML</span>
+          <span className="appLogo"> Bias Engine</span>
         </Navbar.Brand>
       </Navbar>
     </>

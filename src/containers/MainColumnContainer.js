@@ -26,16 +26,16 @@ function MainColumnContainer() {
       >
         <VisualizerContainer />
       </Grid>
-      {!state.stepper_finish && (getIsCodeShown() || getIsToolboxShown()) && (
-        <Grid item className="codeContainer">
-          {getIsCodeShown() ? (
-            <CodeContainer getIsShown={getIsCodeShown} />
-          ) : null}
-          {getIsToolboxShown() ? (
-            <ToolboxContainer getIsShown={getIsToolboxShown} />
-          ) : null}
-        </Grid>
-      )}
+      {/*{!state.stepper_finish && (getIsCodeShown() || getIsToolboxShown()) && (*/}
+      {/*  <Grid item className="codeContainer">*/}
+      {/*    {getIsCodeShown() ? (*/}
+      {/*      <CodeContainer getIsShown={getIsCodeShown} />*/}
+      {/*    ) : null}*/}
+      {/*    {getIsToolboxShown() ? (*/}
+      {/*      <ToolboxContainer getIsShown={getIsToolboxShown} />*/}
+      {/*    ) : null}*/}
+      {/*  </Grid>*/}
+      {/*)}*/}
     </Grid>
   );
 }

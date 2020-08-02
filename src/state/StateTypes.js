@@ -1,6 +1,6 @@
 export const Tasks = Object.freeze({
-  CLASSIFICATION: "Classification",
-  REGRESSION: "Regression",
+  CLASSIFICATION: "Face Classification",
+  // REGRESSION: "Regression",
   NATURAL_LANGUAGE: "Natural Language",
 });
 
